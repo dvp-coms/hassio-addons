@@ -98,7 +98,7 @@ class AbodeApiClient:
         if not self._cameras:
             self._get_devices()
             log.warning("DVP-Done getting devices, checking for Abode cams")
-            self._cameras = [d for d in self._devices if d['type_tag'] == 'IP Cam']
+            self._cameras = [d for d in self._devices]
             if len(self._cameras) == 0:
                 log.warning("No cameras found in your Abode setup_dvp")
         return self._cameras
