@@ -97,10 +97,9 @@ class AbodeApiClient:
     def _get_cameras(self) -> list:
         if not self._cameras:
             self._get_devices()
-            self._cameras = [d for d in self._devices if d['type_tag'] == const.CAMERA_TYPE and
-                             d['origin'] == 'abode_cam']
+            self._cameras = [d for d in self._devices if d['type_tag'] == const.CAMERA_TYPE]
             if len(self._cameras) == 0:
-                log.warning("No cameras found in your Abode setup")
+                log.warning("No cameras found in your Abode setup_dvp")
         return self._cameras
 
     @property
