@@ -47,7 +47,7 @@ class ConfigParser:
                             help='Abode username')
         parser.add_argument('--abode-password', '-p', action=EnvDefault,
                             envvar='ABODE_PASSWORD', required=False,
-                            help='Abode password')
+                            help='Abode password_DVP')
         parser.add_argument('--locale', '-l', action=EnvDefault,
                             envvar='ABODE_LOCALE', default=const.DEFAULT_LOCALE,
                             help='Abode locale (default: %(default)s)')
