@@ -5,6 +5,6 @@ build_from:
   i386: "docker.io/alexxit/go2rtc:latest"
 labels:
   org.opencontainers.image.title: "Home Assistant Add-on: Abode Camera Streamer DVP"
-  org.opencontainers.image.description: "Provides streaming video from Abode security cameras."
+  org.opencontainers.image.description: "Provides streaming video from Abode security cameras. DVP"
   org.opencontainers.image.source: "https://github.com/dvp-coms/hassio-addons"
   org.opencontainers.image.licenses: "Apache License 2.0"
