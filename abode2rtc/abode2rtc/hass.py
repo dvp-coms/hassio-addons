@@ -58,19 +58,24 @@ class HassApiClient:
     def get_abode_cams(self) -> list:
         def __is_abode_cam(state) -> bool:
             if not state['entity_id'].startswith('camera.'):
-                log.info(state['entity_id']+"DVP-bad entityID")
+                log.info("DVP-bad entityID")
+                log.info(state['entity_id'])
                 return False
             elif 'device_id' not in state['attributes']:
-                log.info(state['attributes']+"DVP-bad attributes")
+                log.info("DVP-bad attributes")
+                log.info(state['attributes'])
                 return False
             elif not state['attributes']['device_id'].startswith('XF:'):
-                log.info(state['attributes']['device_id']+"DVP-bad deviceID")
+                log.info("DVP-bad deviceID")
+                log.info(state['attributes']['device_id'])
                 return False
             elif 'device_type' not in state['attributes']:
-                log.info(state['attributes']+"DVP-bad deviceType")
+                log.info("DVP-bad deviceTypeD")
+                log.info(state['attributes'])
                 return False
             elif not state['attributes']['device_type'].startswith('Abode Cam'):
-                log.info(state['attributes']['device_type']+"DVP-bad deviceType2")
+                log.info("DVP-bad deviceType2")
+                log.info(state['attributes']['device_type'])
                 return False
             return True
         states = self.get_states()
