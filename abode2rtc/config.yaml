@@ -3,7 +3,6 @@ version: R3
 slug: abode2rtc
 description: Provides streaming video from Abode security cameras DVP
 url: https://github.com/dvp-coms/hassio-addons/tree/main/abode2rtc
-image: "ghcr.io/dvp-coms/{arch}-addon-abode2rtc"
 arch: [amd64, aarch64, armv7, i386]
 init: false
 startup: services
