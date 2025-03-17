@@ -108,7 +108,7 @@ try:
         log.info("Home Assistant has the Abode integration installed")
         hass_cameras = hass.get_abode_cams()
         have_hass = True
-        log.info(f"Found {len(hass_cameras)} Abode cameras in Home Assistant")
+        log.info(f"Found {len(hass_cameras)} Abode cameras in Home Assistant_dvp")
     else:
         log.info("Home Assistant does not have the Abode integration installed")
 except ConnectionError as exc:
