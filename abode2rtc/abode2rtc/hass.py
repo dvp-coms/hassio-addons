@@ -73,7 +73,7 @@ class HassApiClient:
                 log.info("DVP-bad deviceTypeD")
                 log.info(state['attributes'])
                 return False
-            elif not state['attributes']['device_type'].startswith('Abode Cam'):
+            elif not state['attributes']['device_type'].startswith('IP Cam'):
                 log.info("DVP-bad deviceType2")
                 log.info(state['attributes']['device_type'])
                 return False
