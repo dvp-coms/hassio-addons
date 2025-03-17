@@ -1,5 +1,5 @@
 BASE_URL = 'https://my.goabode.com'
-CAMERA_TYPE = 'device_type.mini_cam'
+CAMERA_TYPE = 'device_type.ip_cam'
 ERR_CAMERA_OFFLINE = 2604
 
 DEFAULT_CONFIG_PATH = '/data/options.json'
