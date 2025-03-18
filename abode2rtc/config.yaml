@@ -16,7 +16,7 @@ panel_icon: mdi:camera-wireless
 map: ["config:ro"]
 ports:
   1984/tcp: 1984
-  8554/tcp: 8554
+  8554/tcp: 8553
   8555/tcp: 8555
   8555/udp: 8555
 schema:
