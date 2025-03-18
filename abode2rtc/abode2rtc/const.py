@@ -9,7 +9,7 @@ DEFAULT_LOCALE = 'en-US'
 DEFAULT_PORTS = {
     'api': 3000,
     'go2rtc': 1984,
-    'rtsp': 8554,
+    'rtsp': 8553,
     'webrtc': 8555
 }
 
